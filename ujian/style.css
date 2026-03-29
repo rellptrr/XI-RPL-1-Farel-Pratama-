@@ -1,0 +1,118 @@
+/* ==== STYLE DASAR ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==== HEADER ==== */
+header {
+  background: rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00d4ff;
+  text-decoration: underline;
+}
+
+/* ==== HERO SECTION ==== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 60px 10%;
+  flex: 1;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+.btn {
+  background: #00bfff;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #0099cc;
+}
+
+.hero-image img {
+  width: 320px;
+  margin-left: 50px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Animasi mengambang gambar */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ==== FOOTER ==== */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    margin: 30px 0 0 0;
+  }
+}
